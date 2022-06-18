@@ -36,8 +36,6 @@ public class SceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
-        getImageName();
     }
 
     public void switchToMainMenu(ActionEvent event) throws IOException {
@@ -78,6 +76,10 @@ public class SceneController {
         }
     }
 
+    public void exitProgram() {
+        System.exit(0);
+    }
+
     @FXML
     private Label welcomeText;
 
@@ -85,4 +87,6 @@ public class SceneController {
     protected void onHelloButtonClick() {
 
     }
+
+
 }
